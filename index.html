@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <meta name="author" content="Marcelo A. Garassino">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Encriptador/Desencriptador</title>
+    </head>
+    <body id="body">
+        <header></header>
+
+        <main>
+            <nav class="navba ms-4 mt-4">
+                <img src="img/Logo.png" alt="">
+            </nav>
+
+            <section class="ms-5 float-start" style="position: relative; display: inline;">
+                    <div class="m-5">
+                        <textarea id="input" class="form-control w-50 bg-transparent " style="font-size: 20px; color:black ;" placeholder="Ingrese aquí el texto" cols="100" rows="10"></textarea>    
+                    </div>
+
+                    <label class="ms-5" for=""><iconify-icon inline icon="bi:exclamation-circle-fill">✯ Usar solo letras minúsculas</label>
+                    <div class="ms-5">
+                    <button onclick="encriptar()" class="btn btn-info boton"  type="button">Encriptar</button>
+                    <button onclick="desencriptar()" class="btn btn-secondary m-2 boton">Desencriptar</button>
+                    </div>
+            </section>
+
+            <section class="me-5" style="position: absolute; right: 5px;"> 
+                <textarea id="copy" class="bg-transparent me-5"  cols="50" rows="23"></textarea> 
+            </section>
+
+            <div id="muneco">
+                <img src="img/munheco.png" style=" width: 250px; " alt="Muñeco">
+                <div class="text-center text-white mt-3">    
+                    <h6 class="text-muted">Ingresa el texto que desees <br> encriptar o Desencriptar</h6>
+                </div>
+            </div>
+
+
+            <button class="btn btn-info botoncopiar" onclick="copy()">Copiar al portapapeles y enviar al area de texto</button>
+            </main>
+
+
+        <footer>
+            <div>Programado por Marcelo A. Garassino</div>
+        </footer>
+
+   
+
+        <script src="main.js"></script>
+        
+    </body>
+</html>
